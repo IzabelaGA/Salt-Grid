@@ -8,7 +8,7 @@
 
 .category {
     --warning-color: #a83a0f;
-    --alone-color: #e69c3c;
+    --hard-color: #e69c3c;
     --poverty-color: #33a80f;
 }
 
@@ -71,8 +71,8 @@ h6 {
     background: var(--warning-color);
 }
 
-.category-alone {
-    background: var(--alone-color);
+.category-hard {
+    background: var(--hard-color);
 }
 
 .category-poverty {
@@ -100,7 +100,7 @@ h6 {
     background: var(--secondary-color);
 }
 
-.btn-block{
+.btn-block {
     display: block;
     width: 100%;
     text-align: center;
@@ -108,6 +108,56 @@ h6 {
 
 .btn:hover {
     opacity: .85;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark a,
+.bg-primary a,
+.bg-secondary a {
+    color: #fff;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-2 {
+    padding: 3rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-2 {
+    padding: 3rem;
 }
 
 /* Navigation */
@@ -193,4 +243,24 @@ h6 {
 
 #showcase .showcase-content p {
     margin-bottom: 1rem;
+}
+
+/* Home Articles */
+#home-articles .articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#home-articles .articles-container>*:first-child,
+#home-articles .articles-container>*:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container>*:last-child {
+    grid-column: 2 / span 2;
 }
