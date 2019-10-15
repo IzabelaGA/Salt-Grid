@@ -169,7 +169,19 @@ h6 {
     border-bottom: 1px dotted #555;
     width: 90%;
 }
-
+/* Inner page grid container */
+.page-container{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 1.5rem;
+    margin: 2rem 0;
+}
+.page-container >*:first-child{
+    grid-row: 1 / span 3;
+}
+.l-heading{
+    font-size: 3rem;
+}
 
 /* Navigation */
 #main-nav {
@@ -209,6 +221,7 @@ h6 {
 #main-nav ul li a:hover {
     background: var(--light-color);
     color: var(--dark-color);
+    border-radius: 5px;
 }
 
 #main-nav .social {
