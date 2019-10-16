@@ -170,6 +170,14 @@ h6 {
     width: 90%;
 }
 
+.card .list li a {
+    transition: .3s;
+}
+
+.card .list li a:hover {
+    margin-left: 1rem;
+}
+
 /* Inner page grid container */
 .page-container {
     display: grid;
